@@ -1,11 +1,18 @@
 html,body{
+    margin: 0;
     width: 100%;
     height: 100%;   
+    background-color: #e0e0e0;
 }
 
 .main{
     width:100%;
-    min-height: 100%;       
+    min-height: 100%;  
+         
+}
+
+header{
+    background-color: rosybrown;
 }
 
 .logo{
@@ -13,12 +20,35 @@ html,body{
     width: 60px;
 }
 
+.hotel-details{
+    background-color: rgb(132,136,139);
+    
+    width: 50%;
+    height: 20%;
+    margin: 2% auto 2% auto;
+}
+
 .hotel-image{
     width: 500px;
     height: 500px;
 }
 
+.customer-info{
+    margin: 2%;
+}
+
+.tariff-details{
+    margin: 2%;
+    border: 1px solid black ;
+    border-radius: 5px;
+    padding: 1% 2%;
+}
+
 .social-image{
     height: 20px;
     width: 22px;
+}
+
+footer{
+    background-color: rosybrown;
 }

@@ -1,11 +1,17 @@
 html,body{
+    margin: 0;
     width: 100%;
     height: 100%;   
+    background-color: #e0e0e0;
 }
 
 .main{
     width:100%;
     min-height: 100%;       
+}
+
+header{
+    background-color: rosybrown;
 }
 
 .logo{
@@ -16,8 +22,21 @@ html,body{
 .hotel-image{
     height: 500px;
     width: 500px;
+    margin: 2%  4% 0 4% ;
 }
+
+.form{
+    margin: 0  4% 1% 4%;
+}
+.description{
+    margin: 1% 4% 2% 4% ;
+}
+
 .social-image{
     height: 20px;
     width: 22px;
+}
+
+footer{
+    background-color: rosybrown;
 }
