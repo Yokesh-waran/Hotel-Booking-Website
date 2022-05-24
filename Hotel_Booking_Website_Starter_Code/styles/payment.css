@@ -3,17 +3,32 @@ html,body{
     width: 100%;
     height: 100%;   
     background-color: #e0e0e0;
+    font-family: 'ubuntu',sans-serif;
 }
 
 .main{
     width:100%;
     min-height: 100%;  
+    padding-top: 64px;
+    padding-bottom: 92px;
          
 }
 
 header{
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: rosybrown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
+
+header a{
+    padding-right: 10px;
+}
+
 
 .logo{
     height: 60px;
@@ -37,6 +52,8 @@ header{
     margin: 2%;
 }
 
+
+
 .tariff-details{
     margin: 2%;
     border: 1px solid black ;
@@ -50,5 +67,31 @@ header{
 }
 
 footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 46px;
     background-color: rosybrown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact{
+    padding-left: 10px;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.social{
+    padding-right: 10px;
+}
+footer p{
+    margin-top: 35px;
+    font-size: 10px;
+    margin-bottom: 0;
 }
