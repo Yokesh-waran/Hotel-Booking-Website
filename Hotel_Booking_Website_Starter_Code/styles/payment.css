@@ -10,8 +10,7 @@ html,body{
     width:100%;
     min-height: 100%;  
     padding-top: 64px;
-    padding-bottom: 92px;
-         
+    padding-bottom: 92px;        
 }
 
 header{
@@ -25,16 +24,25 @@ header{
     align-items: center;
 }
 
-header a{
-    padding-right: 10px;
+.login{
+    margin-right: 2%;
 }
 
+.h-a{
+    margin-left:1%;
+}
 
 .logo{
     height: 60px;
     width: 60px;
 }
 
+.content{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
 .hotel-details{
     background-color: rgb(132,136,139);
     
@@ -44,21 +52,32 @@ header a{
 }
 
 .hotel-image{
-    width: 500px;
-    height: 500px;
+    max-width: 270px;
+    max-height: 300px;
+    float:left;
+    margin-right: 1%;
 }
 
 .customer-info{
     margin: 2%;
 }
 
-
+.details{
+    display:flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 2% 0 2%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rosybrown;
+}
+.heading{
+    font-family: cursive ;
+}
 
 .tariff-details{
-    margin: 2%;
-    border: 1px solid black ;
-    border-radius: 5px;
-    padding: 1% 2%;
+    margin: 2%; 
 }
 
 .social-image{
@@ -78,7 +97,7 @@ footer{
     align-items: center;
 }
 .contact{
-    padding-left: 10px;
+    margin-left: 2%;
 }
 
 
@@ -88,10 +107,11 @@ a{
 }
 
 .social{
-    padding-right: 10px;
+    margin-right: 2%;
 }
+
 footer p{
-    margin-top: 35px;
+   
     font-size: 10px;
-    margin-bottom: 0;
+   
 }

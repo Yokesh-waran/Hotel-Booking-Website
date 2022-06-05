@@ -10,31 +10,51 @@
 <body>
     <div class="main">
         <header>
-            <a href="index.html">
+            <a  class="h-a" href="index.html">
                 <img class="logo" src="./assests/images/logo.png" alt="logo">
             </a>
-            <a href="login.html" >Login</a>
+            <a class="login" href="login.html" >Login</a>
         </header>
         <div class="content">
-            <img class="hotel-image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">        
-            <form action="payment.html" class="form">
-                <label for="Adults">Adults:</label>
-                <input type="number" name="Adults" min="1"><br>
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="" required><br>
-                <label for="from-date">From Date:</label>
-                <input type="date" name="from-date" id=""><br>
-                <label for="to-date">To Date:</label>
-                <input type="date" name="to-date" id=""><br>
-                <label for="total">Total:</label>
-                <input type="text" name="total" id="" readonly><br>
-                <button>Book Now</button>
-            </form>
+            <div class="container">
+                <div class="content-img">
+                    <img class="hotel-image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">   
+                </div>  
+                <div class="content-form">  
+                    <form action="payment.html" class="form" autocomplete="off">
+                        <div class="wrapper">
+                            <div class="form-row">
+                                <label for="Adults">Adults:</label>
+                                <input type="number" name="Adults" min="1">
+                            </div>
+                            <div class="form-row">
+                                <label for="name">Name:</label>
+                                <input type="text" name="name" id="" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="from-date">From Date:</label>
+                                <input type="date" name="from-date" id="">
+                            </div>
+                            <div class="form-row">
+                                <label for="to-date">To Date:</label>
+                                <input type="date" name="to-date" id="">
+                            </div>
+                             <div class="form-row">
+                                <label for="total">Total:</label>
+                                <input type="text" name="total" id="" readonly>
+                            </div>
+                            <div class="form-row">
+                                <button>Book Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>  
+            </div>
             <div class="description">   
                 <h2>Radisson Blu Hotel</h2>
-                <p>RATING</p>
+                <h5 class="heading">RATING</h5>
                 <p>5 Star</p>
-                <p>AMENITIES</p>
+                <h5 class="heading">AMENITIES</h5>
                 <ul>
                     <li>Room service</li>
                     <li>Restaurant</li>
@@ -42,18 +62,18 @@
                     <li>Fitness center</li>
                     <li>pool</li>
                 </ul>
-                <h5>DESCRIPTION</h5>
+                <h5 class="heading">DESCRIPTION</h5>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, repudiandae, laboriosam eius praesentium labore quaerat deleniti nesciunt, quisquam molestias consequatur repellat? Sapiente fugiat obcaecati repudiandae similique deleniti eius consequatur distinctio.</p>
             </div>
         </div>
         <footer>
-            <div>
+            <div class="contact">
                 <a href="contact.html" >Contact Us</a>
             </div>
             <div>
                 <p>&copy; 2022 ROOM SEARCH PVT LTD</p>       
             </div>
-            <div>
+            <div class="social">
                 <a href="https://www.facebook.com/" target="_blank"><img class="social-image" src="./assests/images/facebook.png" alt="Facebook"></a>
                 <a href="https://www.instagram.com/" target="_blank"><img class="social-image" src="./assests/images/instagram.png" alt="Facebook"></a>
                 <a href="https://twitter.com/i/flow/login" target="_blank"><img class="social-image" src="./assests/images/twitter.png" alt="Facebook"></a>

@@ -25,26 +25,83 @@ header{
     align-items: center;
 }
 
-header a{
-    padding-right: 10px;
+
+.login{
+    margin-right: 2%;
+}
+
+.h-a{
+    margin-left:1%;
 }
 
 .logo{
     height: 60px;
     width: 60px;
+ 
 }
 
 
+.container{
+    margin: 1%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    
+}
+
+.content-img{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-grow: 3;
+border-right:1px solid black ;
+}
+
+.content-form{
+flex-grow: 1;
+display: flex;
+justify-content: space-evenly;
+
+}
 
 .hotel-image{
-    height: 500px;
+    max-height: 350px;
     width: 500px;
-    margin: 2%  4% 0 4% ;
+    
 }
 
 .form{
-    margin: 0  4% 1% 4%;
+    display: flex;
+    align-content: space-around;
+    
 }
+.wrapper{
+    list-style-type: none;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.form-row{
+    display:flex; 
+    justify-content:space-between;
+}
+
+.form-row label{
+    flex: 1;
+} 
+
+ .form-row input{
+    flex: 1;
+}
+
+form input{
+    width: 60%;
+}
+
 .description{
     margin: 1% 4% 2% 4% ;
 }
@@ -68,6 +125,8 @@ footer{
 
 .contact{
     padding-left: 10px;
+    margin-left: 2%;
+    
 }
 
 
@@ -78,9 +137,14 @@ a{
 
 .social{
     padding-right: 10px;
+    margin-right: 2%;
 }
 footer p{
-    margin-top: 35px;
+    
     font-size: 10px;
     
+}
+.heading{
+    font-family: cursive;
+    /* font-weight: bold; */
 }

@@ -19,23 +19,30 @@ header{
     align-items: center;
 }
 
-header a{
-    padding-right: 10px;
+
+.h-a{
+    margin-left: 1%;
 }
 
+header a{   
+    margin-right: 2%;
+}
 
 .main{
     width:100%;
     min-height: 100vh;   
-    padding-top: 64px ;
+    padding-top: 64px;
     padding-bottom: 46px;
 }
 
 .logo{
     height: 60px;
-    width: 60px;
+    width: 60px;  
 }
 
+ul{
+    padding:0;
+}
 .content{
     
 }
@@ -44,21 +51,22 @@ header a{
     margin: 2%;
     display: flex;
     flex-direction: row;
-    
+
     flex-wrap: wrap;
     column-gap: 180px;
     row-gap: 50px;
     
 }
 .city-div{
-    background-color: rgb(132, 136, 139);
+    background-color: lightgray;
     width: 40%;
 }
 
 .city-image{
     height: 150px;
     width: 150px;
-    
+    margin-right: 2%;
+    float: left;
 }
 
 #map-view{
@@ -83,8 +91,10 @@ footer{
     
     
 }
+
 .contact{
     padding-left: 10px;
+    margin-left: 2%;
 }
 
 a{
@@ -94,12 +104,13 @@ a{
 
 .social{
     padding-right: 10px;
+    margin-right: 2%;
 }
-footer p{
-    margin-top: 35px;
+
+footer p{ 
     font-size: 10px;
-    margin-bottom: 0;
 }
+
 .hyper-link{
     display: flex;
     flex-direction: row;
