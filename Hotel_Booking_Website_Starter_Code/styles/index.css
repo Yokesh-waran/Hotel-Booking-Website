@@ -1,17 +1,11 @@
-html,body{
-    margin: 0;
-    width: 100%;
-    min-height: 100vh;  
-    background-color: #e0e0e0; 
-    font-family: 'ubuntu',sans-serif;
-}
+
 
 header{
     position: fixed;
     top: 0;
     width: 100%;
     background-color: rosybrown;
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; 
@@ -21,8 +15,11 @@ header img{
     margin-left:1% ;
 }
 
-header a{   
+header a{
     margin-right: 2%;
+}
+header button{   
+    margin-right: 2% !important;
 }
 
 .main{ 
@@ -30,6 +27,10 @@ header a{
     min-height: 100vh; 
     padding-top: 60px;
     padding-bottom: 60px;
+    /* padding-bottom: 64px;
+    display: flex;
+    align-content: space-evenly;
+    flex-direction: column; */
 }
 
 .logo{
@@ -66,7 +67,7 @@ header a{
     font-size: 16px;
     border-radius: 12px;
     width: 380px;
-    height: 6%;
+    height: 9%;
 }
 
 #search:focus{
@@ -74,13 +75,15 @@ header a{
 }
 
 .city-cards{
-    
+    /* height: 100%; */
     position: relative; 
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    /* flex-direction:column;
+    flex-wrap: wrap;
+     */
 }
-   
 .city-cards img{
     box-shadow: 10px 10px 10px 0 grey;
 }
@@ -115,7 +118,7 @@ header a{
 
 .image-overlay:hover{
     opacity: 1;
-    color: white;
+    color: white !important;
 }
 
 
@@ -129,36 +132,9 @@ header a{
     flex-direction: row;
     justify-content: center;
 }
-
-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-   background-color: rosybrown;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-}
-
-
-.contact{
-    padding-left: 10px;
-    margin-left: 2%;
-}
-
-
-a{
+.view-more a{
     text-decoration: none;
     color: black;
 }
 
-.social{
-    padding-right: 10px;
-    margin-right: 2%;
-}
-
-footer p{
-    font-size: 10px;
-}
 

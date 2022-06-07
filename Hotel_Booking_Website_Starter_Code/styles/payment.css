@@ -28,8 +28,8 @@ header{
     margin-right: 2%;
 }
 
-.h-a{
-    margin-left:1%;
+header button{   
+    margin-right: 2% !important;
 }
 
 .logo{
@@ -96,6 +96,7 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
+
 .contact{
     margin-left: 2%;
 }
@@ -110,8 +111,15 @@ a{
     margin-right: 2%;
 }
 
-footer p{
-   
-    font-size: 10px;
-   
+footer .copy-right{
+    font-size: 10px !important;
+}
+
+.copy-right P{
+    margin: 0;
+    font-size: 10PX;
+}
+
+.content .details button{
+    pointer-events: none;
 }

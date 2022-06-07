@@ -3,7 +3,7 @@ html,body{
     width: 100%;
     height: 100%;   
     background-color: #e0e0e0;
-    font-family: 'ubuntu',sans-serif;
+    font-family: 'ubuntu',sans-serif !important;
 }
 
 .main{
@@ -23,6 +23,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+   
 }
 
 
@@ -30,8 +31,8 @@ header{
     margin-right: 2%;
 }
 
-.h-a{
-    margin-left:1%;
+header button{   
+    margin-right: 2% !important;
 }
 
 .logo{
@@ -41,28 +42,29 @@ header{
 }
 
 
-.container{
-    margin: 1%;
-    min-height: 400px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.container-1{
+    margin: 1% !important;
+    min-height: 400px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
     border: 1px solid black;
+    padding: 0;
     
 }
 
 .content-img{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-grow: 3;
+display: flex !important;
+justify-content: center !important;
+align-items: center !important;
+flex-grow: 3 !important;
 border-right:1px solid black ;
 }
 
 .content-form{
-flex-grow: 1;
-display: flex;
-justify-content: space-evenly;
+flex-grow: 1 !important;
+display: flex !important;
+justify-content: space-evenly !important;
 
 }
 
@@ -72,35 +74,41 @@ justify-content: space-evenly;
     
 }
 
-.form{
-    display: flex;
-    align-content: space-around;
-    
+.form1{
+    display: flex !important;
+    align-content: space-around !important; 
 }
+
 .wrapper{
-    list-style-type: none;
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    list-style-type: none !important;
+    height: inherit !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
 
 }
 .form-row{
-    display:flex; 
-    justify-content:space-between;
+    display:flex !important; 
+    justify-content:space-between !important;
+}
+
+.form-row-button{
+    display:flex;
+    justify-content: center;
 }
 
 .form-row label{
-    flex: 1;
+    flex: 1 !important;
 } 
 
  .form-row input{
-    flex: 1;
+    flex: 1 !important;
 }
 
 form input{
-    width: 60%;
+    width: 60% !important;
 }
+
 
 .description{
     margin: 1% 4% 2% 4% ;
@@ -124,27 +132,38 @@ footer{
 }
 
 .contact{
-    padding-left: 10px;
     margin-left: 2%;
-    
 }
 
 
 a{
     text-decoration: none;
-    color: black;
+    color: black !important;
 }
 
 .social{
     padding-right: 10px;
     margin-right: 2%;
 }
-footer p{
+
+footer .copy-right{
     
-    font-size: 10px;
-    
+    font-size: 10px !important;
+}
+
+.copy-right P{
+    margin: 0 !important;
 }
 .heading{
-    font-family: cursive;
+    font-family: cursive !important;
     /* font-weight: bold; */
 }
+
+.stars .color{
+    color: orange;
+}
+
+
+
+
+

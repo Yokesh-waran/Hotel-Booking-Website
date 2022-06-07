@@ -1,0 +1,86 @@
+html,body{
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;  
+    background-color: #e0e0e0; 
+    font-family: 'ubuntu',sans-serif;
+}
+
+
+
+.logo{
+    height: 60px;
+    width: 60px;
+ 
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rosybrown;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+   
+}
+
+
+.login{
+    margin-right: 2%;
+}
+
+.social-image{
+    height: 20px;
+    width: 22px;
+}
+
+header img{
+    margin-left:1% ;
+}
+
+header a{
+    margin-right: 2%;
+}
+header button{   
+    margin-right: 2% !important;
+}
+
+ #footer{
+    position: fixed !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 50px !important;
+   background-color: rosybrown !important;
+   display: flex !important;
+   flex-direction: row !important;
+   justify-content: space-between !important;
+   align-items: center !important;
+}
+
+
+ 
+.contact{  
+    margin-left: 2% !important;
+}
+
+
+html body a{
+    text-decoration: none !important;
+   
+}
+
+.social{
+    margin-right: 2% !important;
+}
+
+footer .copy-right{
+    font-size: 10px !important;
+    font-size: 10px;
+}
+
+p{
+    margin: 0 !important;
+}
+

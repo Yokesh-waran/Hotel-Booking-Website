@@ -24,10 +24,14 @@ header{
     margin-left: 1%;
 }
 
-header a{   
-    margin-right: 2%;
+header img{
+    margin-left:1% ;
 }
 
+
+header button{   
+    margin-right: 2% !important;
+}
 .main{
     width:100%;
     min-height: 100vh;   
@@ -43,23 +47,30 @@ header a{
 ul{
     padding:0;
 }
-.content{
-    
-}
+
 
 #list-view{
     margin: 2%;
     display: flex;
     flex-direction: row;
-
     flex-wrap: wrap;
     column-gap: 180px;
     row-gap: 50px;
-    
 }
+
+body a{
+    text-decoration: none !important;
+    color: black !important;
+
+}
+
 .city-div{
     background-color: lightgray;
     width: 40%;
+}
+
+.city-div:hover{
+    background-color: rosybrown;
 }
 
 .city-image{
@@ -69,31 +80,24 @@ ul{
     float: left;
 }
 
-#map-view{
-    display: none;
-    margin-bottom: 60px;
-}
-
 .social-image{
     height: 20px;
     width: 22px;
 }
 
 footer{
-   position: fixed;
-   bottom: 0;
-   width: 100%;
-   background-color: rosybrown;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-    
-    
+   position: fixed !important;
+   bottom: 0 !important;
+   height: 50px !important;
+   width: 100% !important;
+   background-color: rosybrown !important;
+   display: flex !important;
+   flex-direction: row !important;
+   justify-content: space-between !important;
+   align-items: center !important;  
 }
 
-.contact{
-    padding-left: 10px;
+.contact{  
     margin-left: 2%;
 }
 
@@ -103,15 +107,21 @@ a{
 }
 
 .social{
-    padding-right: 10px;
     margin-right: 2%;
 }
 
-footer p{ 
-    font-size: 10px;
+footer .copy-right{
+    font-size: 10px !important;
 }
 
-.hyper-link{
+p{
+    margin: 0 !important;
+}
+
+#hyper-link{
+    position: sticky;
+    width: 100%;
+    top:60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -121,4 +131,8 @@ ul li{
     list-style: none;
     display: inline-block;
     font-weight: bold;
+}
+
+.stars .color{
+    color: orange;
 }
