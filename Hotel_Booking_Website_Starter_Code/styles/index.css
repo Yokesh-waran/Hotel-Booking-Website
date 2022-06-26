@@ -1,142 +1,110 @@
-
-
-header{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rosybrown;
-    display: flex !important;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; 
-}
-
-header img{
-    margin-left:1% ;
-}
-
-header a{
-    margin-right: 2%;
-}
-header button{   
-    margin-right: 2% !important;
-}
-
-.main{ 
-    width:100%;
-    min-height: 100vh; 
-    padding-top: 60px;
-    padding-bottom: 60px;
-    /* padding-bottom: 64px;
-    display: flex;
-    align-content: space-evenly;
-    flex-direction: column; */
-}
-
-.logo{
-    height: 60px;
-    width: 60px;
-}
-
-.content{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;   
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
 }
 
 
-.search-bar{ 
-    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
-    height: 380px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
+#content {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+#searchdiv {
+  width: 100%;
+  height: 61vh;
+  background: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg)
+    no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#searchbox {
+  min-width: 22%;
+  min-height: 35px;
+  border-radius: 10px;
+  border: none;
+  font-size: medium;
+  padding-left: 10px;
+}
+#slider {
+  width: 90vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 3%;
+}
+#hide1{
+  width: auto;
+  height: auto;
+  display: none;
 
-#search{
-    border: 1px solid transparent;
-    background-color: #f1f1f1;
-    padding-left: 10px;
-    font-size: 16px;
-    border-radius: 12px;
-    width: 380px;
-    height: 9%;
-}
-
-#search:focus{
-    outline: none;
-}
-
-.city-cards{
-    /* height: 100%; */
-    position: relative; 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    /* flex-direction:column;
-    flex-wrap: wrap;
-     */
-}
-.city-cards img{
-    box-shadow: 10px 10px 10px 0 grey;
-}
-.city-image{   
-    width: 150px;
-    height: 150px;
-    border-radius: 25%;
-    
 }
 
 
-.image-overlay{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: rgba(0,0,0,0.5);
-    opacity: 0;
+#slider1 {
+  width: 90vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 3%;
 }
 
-
-.overlay{
-    width: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;  
+.box {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  position: absolute;
+}
+.city {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  overflow: hidden;
+  opacity: 0;
+}
+.city:hover {
+  opacity: 1;
+}
+#view-more {
+  width: 105px;
+  height: 30px;
+  margin-top: 2%;
+  margin-bottom: 15%;
+}
+#viewbtn {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  border: none;
+  font-weight: bold;
+  border-radius: 3px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
 }
 
-.overlay a{
-    color: white;
-}
-
-.image-overlay:hover{
-    opacity: 1;
-    color: white !important;
-}
-
-
-.social-image{
-    height: 20px;
-    width: 22px;
-}
-
-.view-more{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.view-more a{
-    text-decoration: none;
-    color: black;
-}
-
-
-
- 

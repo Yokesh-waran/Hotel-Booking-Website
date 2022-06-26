@@ -1,138 +1,97 @@
-html,body{
-    margin: 0;
-    width: 100%;
-    height: 100%;   
-    background-color: #e0e0e0;
-    font-family: 'ubuntu',sans-serif;
-}
-
-header{
-    
-    background-color: rosybrown;
-    background-color: rosybrown;
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 
-.h-a{
-    margin-left: 1%;
+#contentlist {
+  width: 95vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 2%;
+  column-gap: 3%;
+  margin-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+
+  overflow: hidden;
 }
 
-header img{
-    margin-left:1% ;
+#map {
+  display: none;
+}
+
+.listbtn {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+#listbtnview {
+  min-width: 80px;
+  height: 40px;
+  border: none;
+  font-size: medium;
+  background-color: rgb(0, 169, 236);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#listbtnmap {
+  min-width: 80px;
+  height: 40px;
+  border: none;
+  font-size: medium;
+  cursor: pointer;
+  margin-left: 5px;
 }
 
 
-header button{   
-    margin-right: 2% !important;
-}
-.main{
-    width:100%;
-    min-height: 100vh;   
-    padding-top: 64px;
-    padding-bottom: 46px;
+
+.star {
+  font-size: 1.5rem;
 }
 
-.logo{
-    height: 60px;
-    width: 60px;  
+.checked {
+  color: orange;
 }
 
-ul{
-    padding:0;
+.grid-item {
+  height: 100%;
+  background-color: rgb(206, 203, 203);
+  margin: 2% 4% 8% 4%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#atag {
+  text-decoration: none;
+  overflow: hidden;
+  color: black;
+}
+
+.hotel {
+  width: 60%;
+  height: 100%;
+}
+
+.rating {
+  width: 56%;
+  height: 100%;
+  padding: 3%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.rating:hover {
+  background-color: rosybrown;
 }
 
 
-#list-view{
-    margin: 2%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 180px;
-    row-gap: 50px;
-}
 
-body a{
-    text-decoration: none !important;
-    color: black !important;
 
-}
-
-.city-div{
-    background-color: lightgray;
-    width: 40%;
-}
-
-.city-div:hover{
-    background-color: rosybrown;
-}
-
-.city-image{
-    height: 150px;
-    width: 150px;
-    margin-right: 2%;
-    float: left;
-}
-
-.social-image{
-    height: 20px;
-    width: 22px;
-}
-
-footer{
-   position: fixed !important;
-   bottom: 0 !important;
-   height: 50px !important;
-   width: 100% !important;
-   background-color: rosybrown !important;
-   display: flex !important;
-   flex-direction: row !important;
-   justify-content: space-between !important;
-   align-items: center !important;  
-}
-
-.contact{  
-    margin-left: 2%;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-.social{
-    margin-right: 2%;
-}
-
-footer .copy-right{
-    font-size: 10px !important;
-}
-
-p{
-    margin: 0 !important;
-}
-
-#hyper-link{
-    position: sticky;
-    width: 100%;
-    top:60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-ul li{
-    list-style: none;
-    display: inline-block;
-    font-weight: bold;
-}
-
-.stars .color{
-    color: orange;
-}

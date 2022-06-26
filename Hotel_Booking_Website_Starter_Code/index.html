@@ -1,110 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>   
-     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">   
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/common.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+
 </head>
+
 <body>
-    <div class="main">
-        <header>
-            <img class="logo" src="./assests/images/logo.png" alt="logo">           
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
-            <!-- Modal -->
-            <div class="modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="index.html" autocomplete="on">
-                            <label for="Uname" class="mx-5">Username:</label> 
-                            <input type="text" name="USERNAME" id="input" placeholder="Enter Username" required autocomplete="on"><br/>
-                            <label for="password" class="mx-5">Password:</label> 
-                            <input type="password" name="password" id="input" placeholder="Enter Password" required><br/>
-                        </form>
-                    </div>
-                    <div class="modal-footer text-center">
-                    <button type="button" class="btn btn-primary">Login</button>
-                    </div>
-                </div>
-                </div>
+   
+    <div id="header">
+        <a href="index.html">
+            <img id="logo" src="assests/images/logo.png" alt="logo">
+        </a>
+        <button onclick="login()" id="loginbtn">LOGIN</button>
+    </div>
+
+    
+    <div id="loginbox">
+        <div id="please-login">
+            <h2>Please Login</h2>
+            <span onclick="login()" id="cross">&#9587</span>
+        </div>
+        <hr>
+        <form id="frombox" action="">
+            <div class="form">
+                <label for=""> Username :</label> <input type="text" name="username" placeholder="Enter Username" id="username" required>
             </div>
- </header>
-        <div class="content">
-            <div class="search-bar">
-                <input type="text" placeholder="City" name="" id="search">
+            <div class="form">
+                <label for=""> Password :</label> <input id="passwordd" type="password" name="password" placeholder="Enter Password" required >
             </div>
-            <div class="city-cards">
-                <a class="city-image" href="list.html"><img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="new-delhi"></a>               
-                    <img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="goa">      
-                    <img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="charminar">    
-                    <img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="kolkatta-calcutta">                  
-                <div class="overlay">
-                    <div class="image-overlay city-image">
-                        <div class="title"><a class="city-image" href="list.html" class="">Delhi</a></div>
-                    </div> 
-                    <div class="image-overlay city-image">
-                        <div class="title">Goa</div>
-                    </div> 
-                    <div class="image-overlay city-image">
-                        <div class="title">Hyderabad</div>
-                    </div> 
-                    <div class="image-overlay city-image">
-                        <div class="title">kolkata</div>
-                    </div> 
+        </form>
+        <hr>
+        <div id="loginboxdiv">
+            <button type="submit"  onclick="loginvalues()" id="loginboxbtn">Login</button>
+        </div>
+    </div>
+
+    
+    <div id="content">
+        <div id="searchdiv">
+            <input  type="text" id="searchbox" placeholder="City">
+        </div>
+
+        <div id="slider">
+            <div  class="box" >
+                <a  href="list.html?delhi">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="">
+
+                    <div  class="city">
+                        <p id="goa" >Delhi</p>
+                    </div>
+                </a>
+            </div>
+            <div   class="box" >
+                <a  href="list.html?goa">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg
+                " alt="">
+                <div class="city">
+                    <p >Goa</p>
+
                 </div>
+                </a>
             </div>
-            <div class="view-more">
-                
-                <a href="#" ><button type="button" class="btn btn-secondary">View more</button></a>              
+            <div class="box" >
+                <a  href="list.html?hyderabad">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="">
+                <div class="city">
+                    <p>Hyderabad</p>
+                </div>
+                </a>
+            </div>
+            <div class="box">
+                <a  href="list.html?kolkata">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="">
+                <div class="city">
+                    <p>Kolkata</p>
+                </div>
+                </a>
             </div>
         </div>
-        <footer id="footer">
-            <div class="contact">    
-                <button type="button" class="btn btn-info btn-sm contact" data-bs-toggle="modal" data-bs-target="#exampleModal2">Contact Us</button>
-                <div class="modal " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Thank you for reaching out!!!</p>
-                            <p>Please enter your email and we will get back to you</p>
-                            <label for="email">Email:</label>
-                            <input type="email"  name="email" placeholder="Enter your email" required><br>
-                        </div>
-                        <div class="modal-footer text-center">
-                        <button type="button" class="btn btn-primary">Submit</button>
-                        </div>
+        <div id="hide1">
+
+        <div id="slider1" >
+            <div class="box">
+                
+                <a href="list.html?chennai">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" alt="">
+
+                    <div  class="city">
+                        <p>Chennai</p>
                     </div>
-                    </div>
-                </div>
+                </a>
             </div>
-            <div class="copy-right">
-                    <p>&copy; 2022 ROOM SEARCH PVT LTD</p>
-            </div>  
-            <div class="social">
-                <a href="https://www.facebook.com/" target="_blank"><img class="social-image" src="./assests/images/facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img class="social-image" src="./assests/images/instagram.png" alt="Facebook"></a>
-                <a href="https://twitter.com/i/flow/login" target="_blank"><img class="social-image" src="./assests/images/twitter.png" alt="Facebook"></a>
-            </div>        
-        </footer>
-    </div> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+            <div class="box" >
+                <a  href="list.html?agra">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg
+                " alt="">
+                <div class="city">
+                    <p>Agra</p>
+
+                </div>
+                </a>
+
+            </div>
+            <div class="box" >
+                <a  href="list.html?jaipur">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg" alt="">
+                <div class="city">
+                    <p>Jaipur</p>
+                </div>
+                </a>
+            
+            </div>
+            <div class="box" >
+                <a  href="list.html?bengaluru">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg" alt="">
+                <div class="city">
+                    <p>Bengaluru</p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+        <div id="view-more">
+            <button onclick="hide()" id="viewbtn"> View More</button>
+        </div>
+    </div>
+
+    
+    <div id="footer">
+        <div id="contentus">
+            <button onclick="contactus()" id="contactbtn"><a href="#">Contact Us</a></button>
+            <div id="copyright">
+                <p>2020 ROOM SEARCH PVT LTD</p>
+
+            </div>
+            <div id="socialicons">
+                <a href="#" class="s-icons"><img src="assests/images/facebook.png" alt="facebook.com" class="s-img"></a>
+                <a href="#" class="s-icons"><img src="assests/images/instagram.png" alt="instagram.com"
+                        class="s-img"></a>
+                <a href="#" class="s-icons"><img src="assests/images/twitter.png" alt="twitter.com" class="s-img"></a>
+            </div>
+
+        </div>
+    </div>
+
+   
+    <div id="contactusbox">
+        <div id="get-touch">
+            <h2>Get in touch</h2>
+            <span onclick="contactus()" id="cross">&#9587</span>
+        </div>
+        <hr>
+        <form id="contactfrom" action="">
+            <div class="email">
+                <p>Thank you for reaching out!!!</p>
+                <p>Please enter your email and we will back to you.</p>
+
+            </div>
+            <div class="email">
+                <label for=""> Email: </label> <input type="email" value="" placeholder="Enter your email id">
+            </div>
+
+        </form>
+        <hr>
+        <div id="contactboxbtn">
+            <button id="contactsubmitbtn"><a href="#">Submit</a></button>
+        </div>
+
+    </div>
+    <script src="scripts/common.js"></script>
+    <script   src="scripts/index.js"  ></script>
+    
+    
+   
+
+    
+
 </body>
+
 </html>

@@ -1,86 +1,236 @@
-html,body{
-    margin: 0;
-    width: 100%;
-    min-height: 100vh;  
-    background-color: #e0e0e0; 
-    font-family: 'ubuntu',sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
+}
+body {
+  background-color: #e0e0e0;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rosybrown;
+  width: 100vw;
+  height: auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+#loginbtn {
+  width: 65px;
+  height: 30px;
+  margin-right: 50px;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
+#loginbtn a {
+  text-decoration: none;
+  color: #000;
+}
+
+#logo {
+  height: 70px;
+  width: 70px;
+  margin-left: 25px;
 }
 
 
-
-.logo{
-    height: 60px;
-    width: 60px;
- 
+#loginbox {
+  min-width: 38%;
+  max-height: 40%;
+  position: absolute;
+  top: 6%;
+  left: 33%;
+  right: 31%;
+  background-color: white;
+  border-radius: 5px;
+  display: none;
+  box-sizing: border-box;
+  z-index: 9999;
+  overflow: hidden;
 }
 
-header{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rosybrown;
-    display: flex !important;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; 
-   
+#please-login {
+  margin: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
-
-.login{
-    margin-right: 2%;
+#cross {
+  font-size: small;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.social-image{
-    height: 20px;
-    width: 22px;
+#frombox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
 }
 
-header img{
-    margin-left:1% ;
+.form {
+  margin: 2%;
+  display: flex;
+  width: 100%;
+  font-size: medium;
+  font-weight: bold;
+  justify-content: space-evenly;
 }
 
-header a{
-    margin-right: 2%;
-}
-header button{   
-    margin-right: 2% !important;
-}
-
- #footer{
-    position: fixed !important;
-    bottom: 0 !important;
-    width: 100% !important;
-    height: 50px !important;
-   background-color: rosybrown !important;
-   display: flex !important;
-   flex-direction: row !important;
-   justify-content: space-between !important;
-   align-items: center !important;
+.form input {
+  font-size: 1rem;
+  height: 24px;
+  border-radius: 4px;
 }
 
-
- 
-.contact{  
-    margin-left: 2% !important;
+#loginboxbtn {
+  width: 20%;
+  height: 30px;
+  background-color: rgb(20, 169, 228);
+  border-radius: 3px;
+  border: none;
+  margin-top: 8px;
+  font-size: 1rem;
 }
 
-
-html body a{
-    text-decoration: none !important;
-   
+#loginboxbtn a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.social{
-    margin-right: 2% !important;
+#loginboxdiv {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer {
+  width: 100vw;
+  height: 8vh;
+  background-color: rosybrown;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-footer .copy-right{
-    font-size: 10px !important;
-    font-size: 10px;
+#contentus {
+  width: 95vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-p{
-    margin: 0 !important;
+#contactbtn {
+  width: 90px;
+  height: 29px;
+  background-color: rgb(9, 120, 163);
+  border: none;
+  border-radius: 3px;
+  font-size: 0.9rem;
 }
+
+#contactbtn a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+#copyright {
+  font-size: 14px;
+}
+
+.s-img {
+  width: 20px;
+  height: 20px;
+}
+
+#contactusbox {
+  min-width: 40%;
+  max-height: 40%;
+  position: absolute;
+  top: 6%;
+  left: 33%;
+  right: 31%;
+  background-color: white;
+  border-radius: 5px;
+  display: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+#get-touch {
+  margin: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contactfrom {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: space-evenly;
+}
+
+.email {
+  margin-left: 20px;
+  font-weight: bold;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-bottom: 2%;
+}
+
+.email p {
+  margin-top: 5px;
+}
+
+.email input {
+  font-size: 1rem;
+  height: 27px;
+  border-radius: 4px;
+}
+
+#contactboxbtn {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-right: 20px;
+}
+
+#contactsubmitbtn {
+  width: 18%;
+  height: 33px;
+  background-color: rgb(20, 169, 228);
+  border-radius: 3px;
+  border: none;
+  margin-top: 8px;
+}
+
+#contactsubmitbtn a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 
