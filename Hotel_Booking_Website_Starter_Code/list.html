@@ -57,7 +57,7 @@
   
     <div id="map">
        
-        <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="" id="mapimg">
+  
 
     </div>
 
@@ -108,7 +108,16 @@
 
     <script  src="scripts/list.js" ></script>
     <script src="scripts/common.js"></script>
-   
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgDetG5crPdf75-ELItbatLruK-9-yAD4&callback=initMap"></script>
+    <script>
+         var map;
+         function initMap() {
+             map = new google.maps.Map(document.getElementById("map"), {
+             center: { lat: -34.397, lng: 150.644 },
+             zoom: 8
+             });
+         }
+ </script>
 
 
 </body>
